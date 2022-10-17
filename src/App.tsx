@@ -1,5 +1,5 @@
-
+import { Router } from "./router";
 
 export const App = () => {
-  return <div className="text-red-500">hello</div>;
+  return <Router />;
 };
