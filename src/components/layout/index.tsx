@@ -19,7 +19,7 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
               alt="Flowbite Logo"
             />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Home
+              Portfolio
             </span>
           </NavLink>
           <button
@@ -48,10 +48,18 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
             <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <NavLink
-                  to={PATHS.ROOT}
+                  to={PATHS.CURRENTPROJECT}
                   className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                 >
-                  Home
+                  Current Project
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={PATHS.PREVIOUSPROJECTS}
+                  className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                >
+                  Previous Projects
                 </NavLink>
               </li>
             </ul>
@@ -62,11 +70,11 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
       <div>{children}</div>
 
       {!hideFooter && (
-        <footer className="fixed bottom-0 p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <footer className="w-screen fixed bottom-0 p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2022{" "}
             <NavLink to="https://flowbite.com/" className="hover:underline">
-              Flowbite™
+              Joe's Portfolio™
             </NavLink>
             . All Rights Reserved.
           </span>
