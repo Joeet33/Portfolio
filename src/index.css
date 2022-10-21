@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel.carousel-slider .control-arrow{
+    background-color: black !important;
+    padding: 1vw;
+    height: fit-content;
+    margin-block: auto !important;
+}
+
+.carousel-root {
+    width: 40%;
+    margin: auto;
+}

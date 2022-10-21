@@ -4,15 +4,18 @@ import { projects } from "../../constants/projects";
 
 export const CurrentProject = () => {
   return (
-    <Layout>
-      {projects.map(({ name, img, description }, index) => (
+    <Layout hideFooter={true}>
+      <div className="flex justify-center pb-8 font-extrabold text-2xl">
+        Current Projects
+      </div>
+      <div className="flex">
         <ProjectCard
-          key={index}
-          name={name}
-          img={img}
-          description={description}
+          name={projects[0].name}
+          img={projects[0].img}
+          description={projects[0].description}
+          github={projects[0].github}
         />
-      ))}
+      </div>
     </Layout>
   );
 };
