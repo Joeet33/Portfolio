@@ -14,11 +14,11 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <NavLink to={PATHS.ROOT} className="flex items-center">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="mr-3 h-6 sm:h-9"
-              alt="Flowbite Logo"
+              src="https://images.vexels.com/media/users/3/140673/isolated/lists/68ff7023a9804bb6e5e12d53f6044c4c-laptop-cartoon-icon.png"
+              className="mr-3 h-12 sm:h-12"
+              alt="Portfolio Logo"
             />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">
               Portfolio
             </span>
           </NavLink>
@@ -38,9 +38,9 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>
@@ -49,7 +49,7 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
               <li>
                 <NavLink
                   to={PATHS.CURRENTPROJECT}
-                  className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  className="block py-2 pr-4 pl-3 text-black bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 dark:text-white font-bold text-lg hover:text-gray-600"
                 >
                   Current Project
                 </NavLink>
@@ -57,7 +57,7 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
               <li>
                 <NavLink
                   to={PATHS.PREVIOUSPROJECTS}
-                  className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  className="block py-2 pr-4 pl-3 text-black bg-blue-700 rounded md:bg-transparent md:text-black md:p-0 dark:text-white font-bold text-lg hover:text-gray-600"
                 >
                   Previous Projects
                 </NavLink>
