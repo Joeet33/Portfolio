@@ -4,8 +4,8 @@ import { PATHS } from "../../constants/paths";
 
 export const Home = () => {
   return (
-    <Layout>
-      <div className="flex flex-col pt-48">
+    <Layout hideFooter={true} hideNav={true}>
+      <div className="flex flex-col pt-52">
         <div className="text-center text-4xl font-extrabold">My Portfolio</div>
 
         <div className="flex justify-center space-x-10 py-16 font-bold">

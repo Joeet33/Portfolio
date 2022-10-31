@@ -5,12 +5,14 @@ import { FC, PropsWithChildren, ReactNode } from "react";
 interface LayoutProps extends PropsWithChildren {
   children: ReactNode;
   hideFooter?: boolean;
+  hideNav?: boolean;
 }
 
-export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
+export const Layout: FC<LayoutProps> = ({ children, hideFooter = false, hideNav = false }) => {
   return (
-    <>
-      <nav className="absolute w-full sm:px-4 py-2.5 bg-green-600 rounded-b-md">
+    <div className="flex flex-col">
+    {!hideNav && (
+      <nav className="fixed w-full sm:px-4 py-2.5 bg-green-600 rounded-b-md">
         <div className="container flex flex-wrap justify-between text-black items-center mx-auto">
           <NavLink to={PATHS.ROOT} className="flex items-center">
             <img
@@ -66,13 +68,14 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
           </div>
         </div>
       </nav>
+)}
 
-      <div className="bg-gray-900 pb-20 min-h-screen overflow-x-hidden">
+      <div className="bg-gray-900 min-h-screen overflow-x-hidden">
         {children}
       </div>
 
       {!hideFooter && (
-        <footer className="w-screen fixed bottom-0 p-4-lg shadow rounded-t-sm md:flex md:items-center md:justify-between md:p-6 bg-green-600">
+        <footer className="relative w-full top-auto p-4-lg shadow rounded-t-sm md:flex md:items-center md:justify-between md:p-6 bg-green-600">
           <span className="text-sm text-gray-900 sm:text-center">
             © 2022{" "}
             <NavLink to="#" className="hover:underline">
@@ -81,6 +84,6 @@ export const Layout: FC<LayoutProps> = ({ children, hideFooter = false }) => {
           </span>
         </footer>
       )}
-    </>
+    </div>
   );
 };
