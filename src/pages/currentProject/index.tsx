@@ -4,8 +4,8 @@ import { projects } from "../../constants/projects";
 
 export const CurrentProject = () => {
   return (
-    <Layout hideFooter={true}>
-      <div className="flex justify-center pb-8 font-extrabold text-2xl">
+    <Layout>
+      <div className="flex justify-center pb-8 font-extrabold pt-28 text-2xl">
         Current Projects
       </div>
       <div className="flex">

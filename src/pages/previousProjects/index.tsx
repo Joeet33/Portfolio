@@ -6,8 +6,8 @@ import { Carousel } from "react-responsive-carousel";
 
 export const PreviousProjects = () => {
   return (
-    <Layout hideFooter={true}>
-      <div className="flex justify-center pb-8 font-extrabold text-2xl">
+    <Layout>
+      <div className="flex justify-center pb-8 pt-28 font-extrabold text-2xl">
         Previous Projects
       </div>
       <div className="flex">
