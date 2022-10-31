@@ -1,16 +1,39 @@
 import { CardDetailTypes } from "../interface/cardDetailTypes";
+const portfolio = require('../assets/portfolio.png')
+const subreddit = require('../assets/subreddit.png')
+const xnft = require('../assets/xnft.png')
+const btc = require('../assets/btc.png')
+const buidl = require('../assets/buidl.png')
 
 export const projects: CardDetailTypes[] = [
   {
-    name: "Current Project",
-    img: "https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-JPGvsPNG.png",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    github: "https://github.com/"
+    name: "Portfolio",
+    img: `${portfolio}`,
+    description: "Reactjs, Typescript, CSS Tailwind",
+    github: "https://github.com/Joeet33/portfolio"
   },
   {
-    name: "Previous Project",
-    img: "https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-JPGvsPNG.png",
-    description: "description",
-    github:"https://github.com/Joeet33/React_Website"
+    name: "Subreddit list",
+    img: `${subreddit}`,
+    description: "Angular 14+, Typescript, CSS Tailwind",
+    github:"https://github.com/Joeet33/pagesuite-test"
+  },
+  {
+    name: "XNFT Application",
+    img: `${xnft}`,
+    description: "Decentralised application made for mobile wallet. Using React xNFT, Typescript, CSS",
+    github:"https://github.com/Joeet33/xnft_hadeswap"
+  },
+  {
+    name: "BTC prediction game",
+    img: `${btc}`,
+    description: "Nextjs, Typescript, CSS Tailwind",
+    github:"https://github.com/Joeet33/BTC-guess-V2"
+  },
+  {
+    name: "Buidl - web3 application",
+    img: `${buidl}`,
+    description: "Reactjs, Typescript, CSS Tailwind",
+    github:"https://github.com/Joeet33/PortfolioWeb3"
   },
 ];
